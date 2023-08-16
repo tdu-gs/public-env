@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受付完了メール</title>
+    <style>
+        /* ベーススタイル */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #007bff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .content {
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+        }
+
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        /* カードのスタイル */
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .card-header {
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .event-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .event-details {
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .cta-button-card {
+            display: block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        /* スマートフォン向けのスタイル */
+        @media screen and (max-width: 320px) {
+            .container {
+                width: 100%;
+                border-radius: 0;
+                box-shadow: none;
+                padding: 10px;
+            }
+
+            .header {
+                margin-bottom: 20px;
+            }
+
+            .content {
+                padding: 10px;
+                margin-bottom: 20px;
+            }
+
+            .cta-button {
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>2023年度 東京電機大学父母懇談会 キャンパス会場 受付票</h1>
+        </div>
+        <div class="content">
+            <p>2023年度 東京電機大学父母懇談会へお申し込みの皆様</p>
+            <p>お世話になっております。</p>
+            <p>この度は、2023年度 東京電機大学父母懇談会へ申し込みをいただき、</p>
+            <p>誠にありがとうございます。</p>
+            <p>以下の通り、受付票をお送りいたしますのでご確認ください。</p>
+            <!-- 受付票 -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>受付票</h2>
+                </div>
+                <div class="card-content">
+                    <p><strong style="font-size: 1.2em;">学籍番号:</strong> <span style="background-color: #007bff; color: #ffffff; padding: 3px 6px; border-radius: 4px;">18NC047</span></p>
+                    <!-- <p><strong>学籍番号:</strong> <span style="background-color: #007bff; color: #ffffff; padding: 3px 6px; border-radius: 4px;">18NC047</span></p> -->
+                    <!-- <p>学籍番号: <span style="background-color: #007bff; color: #ffffff; padding: 3px 6px; border-radius: 4px;">18NC047</span></p> -->
+                    <!-- <p style="background-color: #007bff; color: #ffffff; padding: 3px 6px; border-radius: 4px;">学籍番号: <span>18NC047</span></p> -->
+
+                    <p>学部・学科・学系名: <br><strong>工学部第二部情報通信工学科</strong></p>
+                    <p>メールアドレス: <br><strong>18nc047@ms.dendai.ac.jp</strong></p>
+                    <p>面談日・会場名: <br><strong>9月9日(土) 東京千住キャンパス</strong></p>
+                    <p>面談時刻: <strong>13:00 より</strong></p>
+                    <p>面談教員名: <strong>◯◯先生</strong></p>
+
+                    <!-- <p class="event-title">秋の楽しいパーティー</p> -->
+                    <!-- <p class="event-details">日時: 2023年9月15日（土）<br>場所: モダンホール</p> -->
+                    <!-- <p>お誘いいたします。</p> -->
+                    <!-- <p>素晴らしい時間を過ごしましょう！</p> -->
+                    <a class="cta-button-card" href="#">出席する</a>
+                </div>
+                <div class="footer">
+                    <p>お問い合わせ: info@example.com</p>
+                </div>
+            </div>
+            
+        
+            <p>詳細情報や変更がある場合は、以下のリンクからアクセスしてください。</p>
+            <a class="cta-button" href="https://example.com/registration_status">受付情報を確認</a>
+        </div>
+        <div class="footer">
+            <p>このメールは自動送信です。ご不明点がある場合は、<a href="mailto:support@example.com">サポート</a>までお問い合わせください。</p>
+        </div>
+    </div>
+</body>
+</html>
