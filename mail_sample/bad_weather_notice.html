@@ -60,36 +60,6 @@
             text-decoration: none;
         }
 
-        .cta-button {
-            display: inline-block;
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            margin-top: 20px;
-        }
-
-        /* カードのスタイル */
-        .card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            margin-top: 20px;
-        }
-
-        .card-header {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 5px;
-            text-align: center;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
         .event-title {
             font-size: 1.5em;
             margin-bottom: 10px;
@@ -100,7 +70,7 @@
             margin-bottom: 20px;
         }
 
-        .cta-button-info {
+        .cta-button-red {
             display: block;
             background-color: #ff0000;
             color: #ffffff;
@@ -111,6 +81,31 @@
             margin-top: 20px;
         }
 
+        .cta-button-blue {
+            display: block;
+            background-color: #007bff;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .cta-button-green {
+            display: block;
+            background-color: #2d9e33;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+
+
+        
         .notes{
             padding-top: 20px;
         }
@@ -122,6 +117,13 @@
         p > u{
             color: #ff0000;
         }
+
+        .borders{
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            margin-bottom: 30px;
+
+        }
     </style>
 </head>
 <body>
@@ -130,16 +132,30 @@
             <h1>2023年9月9日（土）東京千住キャンパス父母懇談会を予定どおり実施いたします</h1>
         </div>
         <div class="content">
-            <p>9/9東京千住キャンパス父母懇談会にお申込みの皆様</p>
-            <p>
-                現在台風13号が接近していますが、2023年9月9日（土）の東京千住キャンパス父母懇談会につきましては、予定どおり実施いたします。<br>
-                東京千住キャンパス会場へは、お気をつけてお越しください。<br>
-                台風の影響により、万が一中止となる場合には、速やかに、以下のホームページにてお知らせいたします。
-            </p>
-            <a class="cta-button-info" href="https://www.dendai.ac.jp/about/campuslife/tdupfa/202301.html">父母懇談会HP</a>
-            <p>
-                <b>なお、当日の交通状況等により、遅刻、ご欠席となる場合には、下記までご連絡をお願いいたします。</b>
-            </p>
+            <div class="notice">
+                <p>9/9東京千住キャンパス父母懇談会にお申込みの皆様</p>
+                <p>
+                    現在台風13号が接近していますが、2023年9月9日（土）の東京千住キャンパス父母懇談会につきましては、予定どおり実施いたします。<br>
+                    東京千住キャンパス会場へは、お気をつけてお越しください。<br>
+                    台風の影響により、万が一中止となる場合には、速やかに、以下のホームページにてお知らせいたします。
+                </p>
+                <a class="cta-button-red" href="https://www.dendai.ac.jp/about/campuslife/tdupfa/parentsmeeting.html">父母懇談会HP</a>
+                <p>
+                    <b>※ なお、当日の交通状況等により、遅刻、ご欠席となる場合には、下記のご連絡先までご連絡をお願いいたします。</b>
+                </p>
+            </div>
+
+            <div class="borders">
+                <p><b>当日の受付は1号館1階です。<br>当日はお気をつけてお越しください。</br></p>
+                <a class="cta-button-blue" href="https://www.dendai.ac.jp/access/tokyo_senju.html" target="_blank">会場へのアクセス</a>
+                
+            </div>
+
+
+            <div class="borders">
+                <p>父母懇懇談会でよくあるご質問と回答をまとめました。<br>参考になさってください。</p>
+                <a class="cta-button-green" href="https://tdu-navi.sg.dendai.ac.jp/TokyoSenjuFAQ2023">よくある質問</a>
+            </div>
         </div>
 
         <h3>ご連絡先</h3>
