@@ -1,118 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Multi-page Access</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-page Access</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
 
-  header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-  }
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+      }
 
-  .container {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
+      .container {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
 
-  .page-links {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+      .page-links {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
 
-  .page-link-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1rem;
-    background-color: #ff7f50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
+      .page-link-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1rem;
+        background-color: #ff7f50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
 
-  .page-link-button:hover {
-    background-color: #e36200;
-    transform: scale(1.05);
-  }
-    .page-link-button2 {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1rem;
-    background-color: #008000;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
+      .page-link-button:hover {
+        background-color: #e36200;
+        transform: scale(1.05);
+      }
+      .page-link-button2 {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1rem;
+        background-color: #008000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
 
-  .page-link-button2:hover {
-    background-color: #006400;
-    transform: scale(1.05);
-  }
-    .page-link-button3 {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 1rem;
-    background-color: #0000ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
+      .page-link-button2:hover {
+        background-color: #006400;
+        transform: scale(1.05);
+      }
+      .page-link-button3 {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1rem;
+        background-color: #0000ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
 
-  .page-link-button3:hover {
-    background-color: #00008b;
-    transform: scale(1.05);
-  }
+      .page-link-button3:hover {
+        background-color: #00008b;
+        transform: scale(1.05);
+      }
 
+      .page-link-button4 {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 10px;
+        font-size: 1rem;
+        background-color: #ff0000;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
 
-</style>
-</head>
-<body>
-  <header>
-    <h1>Public ENV</h1>
-  </header>
-  <div class="container">
-    <h2>父母懇談会 受付メール サンプル</h2>
-    <p>作成したメールのサンプルを各ページにホストしています。</p>
-    <p>チェックに利用しください。</p>
-    
-    <div class="page-links">
-      <a href="./mail_sample/20230909_campus.html" class="page-link-button">9/9 東京千住キャンパス 受付メールサンプル1</a>
-      <a href="./mail_sample/20230909_campus2.html" class="page-link-button">9/9 東京千住キャンパス 受付メールサンプル2</a>
-      <a href="./mail_sample/20230909_campus3.html" class="page-link-button2">9/9 東京千住キャンパス 受付メールサンプル3(最新版)</a>
+      .page-link-button4:hover {
+        background-color: #8b0000;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Public ENV</h1>
+    </header>
+    <div class="container">
+      <h2>父母懇談会 受付メール サンプル</h2>
+      <p>作成したメールのサンプルを各ページにホストしています。</p>
+      <p>チェックに利用しください。</p>
 
-      <h3>※メールアドレスの部分のみ固定の値(早川のアドレス)が入っています。</h3>
-      <a href="./mail_sample/fr.html" class="page-link-button3">9/9 東京千住キャンパス 受付メール(fr)</a>
-      <a href="./mail_sample/fa.html" class="page-link-button3">9/9 東京千住キャンパス 受付メール(fa)</a>
-      <a href="./mail_sample/fi.html" class="page-link-button3">9/9 東京千住キャンパス 受付メール(fi)</a>
-      <a href="./mail_sample/aj.html" class="page-link-button3">9/9 東京千住キャンパス 受付メール(aj)</a>
-      <a href="./mail_sample/ad.html" class="page-link-button3">9/9 東京千住キャンパス 受付メール(ad)</a>
-      <!-- <a href="page3.html" class="page-link-button">Go to Page 3</a> -->
+      <div class="page-links">
+        <a href="./mail_sample/20230909_campus.html" class="page-link-button"
+          >9/9 東京千住キャンパス 受付メールサンプル1</a
+        >
+        <a href="./mail_sample/20230909_campus2.html" class="page-link-button"
+          >9/9 東京千住キャンパス 受付メールサンプル2</a
+        >
+        <a href="./mail_sample/20230909_campus3.html" class="page-link-button2"
+          >9/9 東京千住キャンパス 受付メールサンプル3(最新版)</a
+        >
+
+        <h2>【8/26・27送信済】9/9 東京千住キャンパス 受付メール</h2>
+        <h3>
+          ※メールアドレスの部分のみ固定の値(早川のアドレス)が入っています。
+        </h3>
+        <a href="./mail_sample/fr.html" class="page-link-button3"
+          >9/9 東京千住キャンパス 受付メール(fr)</a
+        >
+        <a href="./mail_sample/fa.html" class="page-link-button3"
+          >9/9 東京千住キャンパス 受付メール(fa)</a
+        >
+        <a href="./mail_sample/fi.html" class="page-link-button3"
+          >9/9 東京千住キャンパス 受付メール(fi)</a
+        >
+        <a href="./mail_sample/aj.html" class="page-link-button3"
+          >9/9 東京千住キャンパス 受付メール(aj)</a
+        >
+        <a href="./mail_sample/ad.html" class="page-link-button3"
+          >9/9 東京千住キャンパス 受付メール(ad)</a
+        >
+
+        <a href="./mail_sample/fa_resend.html" class="page-link-button3"
+          >【再送】9/9 東京千住キャンパス 受付メール(fr)</a
+        >
+
+        <!-- <a href="page3.html" class="page-link-button">Go to Page 3</a> -->
+
+        <h2>【】9/9 東京千住キャンパス 天候不良メール</h2>
+        <a href="./mail_sample/bad_weather_notice.html" class="page-link-button4"
+          >9/9 東京千住キャンパス 天候不良メール</a
+        >
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
