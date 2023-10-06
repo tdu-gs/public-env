@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>受付完了メール</title>
+    <style>
+      /* ベーススタイル */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 20px auto;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        color: #007bff;
+        margin: 0;
+        padding: 0;
+      }
+
+      .content {
+        padding: 20px;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 30px;
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 12px;
+        color: #777;
+      }
+
+      .footer a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      .cta-button {
+        display: inline-block;
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      /* カードのスタイル */
+      .card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-top: 20px;
+      }
+
+      .card-header {
+        background-color: #007bff;
+        color: #ffffff;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .event-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .event-details {
+        color: #777;
+        margin-bottom: 20px;
+      }
+
+      .cta-button-card {
+        display: block;
+        background-color: #007bff;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      .cta-button-info {
+        display: block;
+        background-color: #777;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 5px;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      .notes {
+        padding-top: 20px;
+      }
+
+      h3 {
+        text-align: center;
+      }
+      li > strong {
+        color: #ff0303;
+      }
+
+      /* スマートフォン向けのスタイル */
+      @media screen and (max-width: 320px) {
+        .container {
+          width: 100%;
+          border-radius: 0;
+          box-shadow: none;
+          padding: 10px;
+        }
+
+        .header {
+          margin-bottom: 20px;
+        }
+
+        .content {
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+
+        .cta-button {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>2023年度 東京電機大学父母懇談会 <br />水戸会場 受付票</h1>
+      </div>
+      <div class="content">
+        <p>2023年度 東京電機大学父母懇談会へお申し込みの皆様</p>
+        <p>
+          お世話になっております。<br />
+          この度は、2023年度 東京電機大学父母懇談会へ申し込みをいただき、<br />
+          誠にありがとうございます。<br />
+          以下の通り、受付票をお送りいたしますのでご確認ください。
+        </p>
+
+        <!-- 受付票 start -->
+        <div class="card">
+          <div class="card-header">
+            <h2>受付票</h2>
+          </div>
+
+          <div class="card-content">
+            <!-- ここから削る -->
+            <p>
+              <strong style="font-size: 1.2em">学籍番号:</strong>
+              <span
+                style="
+                  font-size: 2em;
+                  background-color: #007bff;
+                  color: #ffffff;
+                  padding: 3px 6px;
+                  border-radius: 4px;
+                "
+                >18ES999</span
+              >
+            </p>
+            <p>フリガナ: <strong>ハヤカワ ヨシカツ</strong></p>
+            <p>学生氏名: <strong>早川 欣克</strong></p>
+            <p>
+              学部・学科・学系名: <br /><strong
+                >工学部 応用化学科</strong
+              >
+            </p>
+            <p>
+              メールアドレス: <br /><strong>18nc047@ms.dendai.ac.jp</strong>
+            </p>
+            <p>
+              面談日・会場名: <br /><strong
+                >10/22（日）水戸会場</strong
+              >
+            </p>
+            <p>面談時刻: <strong>13:00 より</strong></p>
+            <p>面談教員名: <strong>◯◯先生</strong></p>
+            <!-- ここまで削る -->
+
+            <p>面談会場: <strong>水戸三の丸ホテル</strong></p>
+            <a
+              class="cta-button-card"
+              href="https://www.rio-hotels.co.jp/mito/access.html"
+              target="_blank"
+              >会場へのアクセス</a
+            >
+
+            <p>当日はお気をつけてお越しください。</p>
+          </div>
+          <div class="footer">
+            <p>お問い合わせ: gs_gakusei1@jim.dendai.ac.jp</p>
+          </div>
+        </div>
+        <!-- 受付票 end -->
+
+        <!-- 注意事項 start -->
+        <div class="notes">
+          <h3>注意事項</h3>
+          <ol>
+            <li>9:45まで(全体説明会の15分前)に受付にお越しください。</li>
+            <li>受付で学籍番号をお伝えください。</li>
+            <li>面談時間は約15分です。</li>
+            <li>
+              遅刻、ご欠席される場合は、必ず下記の「お問い合わせ先」までご連絡をお願いいたします。
+            </li>
+            <ul>
+              <li>
+                <strong
+                  >特に、当日のご連絡は必ずメールにてお願いいたします。</strong
+                >
+              </li>
+            </ul>
+            <ul>
+              <u
+                ><li>
+                  遅刻された場合、十分な面談時間を確保できない場合があります。時間に余裕をもってご来場ください。
+                </li></u
+              >
+            </ul>
+          </ol>
+        </div>
+        <!-- 注意事項 end -->
+
+        <!-- <p>詳細情報や変更がある場合は、以下のリンクからアクセスしてください。</p> -->
+        <h3>後援会事務局からのお知らせ</h3>
+        <p>
+          父母懇談会についてのお知らせは以下のページも掲載しております。<br />
+          ぜひご確認ください。
+        </p>
+        <p>
+          悪天候などにより、<u
+            ><b
+              >万が一中止となる場合には、速やかに、以下のホームページにてお知らせいたします。</b
+            ></u
+          >
+
+          <a
+            class="cta-button-info"
+            href="https://www.dendai.ac.jp/about/campuslife/tdupfa/parentsmeeting.html"
+            >お知らせ</a
+          >
+        </p>
+
+        <p>
+          <b
+            >※なお、当日の交通状況等により、遅刻、ご欠席となる場合には、下記までご連絡をお願いいたします。</b
+          >
+        </p>
+      </div>
+
+      <h3>お問合せ先</h3>
+      <div class="footer">
+        <p>
+          このメールは自動送信です。<br />ご不明点がある場合は、<a
+            href="mailto:gs_gakusei1@jim.dendai.ac.jp"
+            >下記</a
+          >までお問い合わせください。
+        </p>
+        <div class="email-signature">
+          <p>***********************************************</p>
+          <p>
+            東京電機大学 後援会事務局<br />(学生支援センター 学生厚生担当内)
+          </p>
+          <p>〒120-8551 東京都足立区千住旭町5番</p>
+          <p>Tel 03-5284-5340　Fax 03-5284-5391</p>
+          <p>
+            <a href="mailto:gs_gakusei1@jim.dendai.ac.jp"
+              >gs_gakusei1@jim.dendai.ac.jp</a
+            >
+          </p>
+          <p>***********************************************</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
