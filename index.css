@@ -1,0 +1,191 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.page-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-link-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-link-button:hover {
+  background-color: #e36200;
+  transform: scale(1.05);
+}
+.page-link-button2 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #008000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-link-button2:hover {
+  background-color: #006400;
+  transform: scale(1.05);
+}
+.page-link-button3 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #0000ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-link-button3:hover {
+  background-color: #00008b;
+  transform: scale(1.05);
+}
+
+.page-link-button4 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-link-button4:hover {
+  background-color: #8b0000;
+  transform: scale(1.05);
+}
+
+.page-link-button5 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.page-link-button5:hover {
+  background-color: #8b2000;
+  transform: scale(1.05);
+}
+
+.page-link-button6 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #4caf50; /* ボタンの背景色 */
+  color: white; /* テキストの色 */
+  border: none;
+  border-radius: 5px; /* ボタンの角を丸くする */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* ホバー時のアニメーション */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ボタンに影を追加 */
+}
+
+.page-link-button6:hover {
+  background-color: #45a049; /* ホバー時の背景色 */
+  transform: scale(1.05); /* ホバー時にボタンを少し大きくする */
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  /* margin-top: 0; */
+  border-top: 1px solid #ddd;
+  width: 80%;
+  margin: 20px auto;
+  padding-top: 40px;
+}
+/* h3 {
+  margin: 0 auto;
+} */
+
+p {
+  margin: 0 auto;
+  width: 80%;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  min-width: 400px;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+th,
+td {
+  padding: 12px 15px;
+  border: 1px solid #dddddd;
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+tbody tr:hover {
+  background-color: #f1f1f1;
+}

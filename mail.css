@@ -1,0 +1,171 @@
+/* ベーススタイル */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #007bff;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+
+.footer a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* カードのスタイル */
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.card-header {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.event-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.event-details {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.cta-button-card {
+  display: block;
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.cta-button-info {
+  display: block;
+  background-color: #777;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+.notes {
+  padding-top: 20px;
+}
+
+h3 {
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* スマートフォン向けのスタイル */
+@media screen and (max-width: 320px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.page-link-button6 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  background-color: #4caf50; /* ボタンの背景色 */
+  color: white; /* テキストの色 */
+  border: none;
+  border-radius: 5px; /* ボタンの角を丸くする */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* ホバー時のアニメーション */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ボタンに影を追加 */
+}
+
+.page-link-button6:hover {
+  background-color: #45a049; /* ホバー時の背景色 */
+  transform: scale(1.05); /* ホバー時にボタンを少し大きくする */
+}
+
+a {
+  text-decoration: none;
+}
